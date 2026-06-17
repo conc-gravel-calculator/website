@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO KEYWORDS FOR GOOGLE -->
     <title>Free Concrete & Gravel Calculator | Bag & Ton Estimator</title>
     <meta name="description" content="Calculate exactly how many 60lb/80lb concrete bags or tons of gravel you need for your project. Perfect mobile tool for contractors and DIY home improvement.">
     <meta name="keywords" content="concrete calculator, gravel calculator, cubic yards estimator, how many concrete bags, gravel tons calculator, yardage calculator">
-    
-    <!-- Google Search Console Verification Placeholder (Paste here later if needed) -->
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="toggle-container" style="text-align: right; padding: 10px; max-width: 500px; margin: 0 auto;">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-text">Dark Mode</span>
+    </div>
 
     <div class="calculator-container">
         <h1>Material Calculator</h1>
@@ -57,14 +62,6 @@
             <div id="gravelResults" class="hidden">
                 <p><strong>Total Weight Needed:</strong> <span id="tonsResult">0</span> Tons</p>
             </div>
-        </div>
-
-        <div class="toggle-container">
-            <label class="switch">
-                <input type="checkbox" id="darkModeToggle">
-                <span class="slider round"></span>
-            </label>
-            <span class="toggle-text">Dark Mode</span>
         </div>
     </div>
 
