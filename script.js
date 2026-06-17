@@ -15,7 +15,7 @@ const concreteResults = document.getElementById("concreteResults");
 const gravelResults = document.getElementById("gravelResults");
 
 /* ========================================================= */
-/* INTERSTITIAL ADMOB PLACEHOLDER                            */
+/* INTERSTITIAL ADMOB PLACEHOLDER                           */
 /* Paste your AdMob Interstitial Ad Unit ID and logic here   */
 /* Example: show ad after calculation button is clicked      */
 /* ========================================================= */
@@ -64,8 +64,9 @@ function calculateMaterials() {
 
     if (selectedMaterial === "concrete") {
 
-        const bags60 = Math.ceil(volume * 45);
-        const bags80 = Math.ceil(volume * 33);
+        // FIXED MATH: 60lb bags need 60 per yard, 80lb bags need 45 per yard
+        const bags60 = Math.ceil(volume * 60);
+        const bags80 = Math.ceil(volume * 45);
 
         bags60Result.textContent = bags60;
         bags80Result.textContent = bags80;
